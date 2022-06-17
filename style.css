@@ -1,0 +1,105 @@
+html{
+    height: 100%;
+    background: url("topRight.png") right top no-repeat, url("bottomLeft.png") left bottom no-repeat fixed;
+}
+
+@media screen and (max-width: 1000px ) {
+    html{
+        background: url("topRight.png") right top no-repeat
+    }
+}
+
+@media screen and (max-height: 975px ) {
+    html{
+        background: url("topRight.png") right top no-repeat
+    }
+}
+
+@media (max-width: 830px ) {
+    html{
+        height: 100%;
+        background-image: none;
+    }
+    #EmpfehlungText{
+        grid-row: 12;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-bottom: 25px;
+    }
+
+}
+
+
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1fr);
+}
+
+#Header{
+    grid-column: 2/3;
+    text-align: center;
+}
+
+#ProblemstellungHeader{
+    grid-row: 2;
+    text-decoration: underline;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#ProblemstellungText{
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#ZielsetzungHeader{
+    margin-top: 25px;
+    grid-row: 5;
+    text-decoration: underline;
+}
+
+#ZielsetzungText{
+    grid-row: 6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#MethodikHeader{
+    margin-top: 25px;
+    grid-row: 7;
+    text-decoration: underline;
+}
+
+#MethodikText{
+    grid-row: 8;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#ErgebnisseHeader{
+    margin-top: 25px;
+    grid-row: 9;
+    text-decoration: underline;
+}
+
+#ErgebnisseText{
+    grid-row: 10;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#EmpfehlungHeader{
+    margin-top: 25px;
+    grid-row: 11;
+    text-decoration: underline;
+}
+
+#EmpfehlungText{
+    grid-row: 12;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
